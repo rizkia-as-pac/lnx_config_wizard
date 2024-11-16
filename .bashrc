@@ -18,14 +18,15 @@ alias workdir="cd $HOME/Desktop/work"
 alias kuliah="cd $HOME/Desktop/kuliah/SEM5"
 alias belajar="cd $HOME/Desktop/belajar"
 
-# Directory to search for .sh files
-SEARCH_DIR=~/shell_config_features
-
-# A while loop with a pipeline (e.g., find | while) runs in a subshell, so any changes made, like sourcing files, remain confined to that subshell and don't affect the parent shell. A for loop, on the other hand, executes directly in the current shell, so sourced files can modify the current shell's environment (e.g., variables, aliases).
-for file in $(find "$SEARCH_DIR" -type f -name "*.sh"); do
-  # echo "Sourcing $file"
-  source "$file"
-done
+SHELL_CONFIG_FEATURES=$HOME/.shell_config_features.sh
+source $SHELL_CONFIG_FEATURES
 
 source $HOME/user-config.sh
+
 PS1='[\u@\h \t \W]\$ '
+
+# # A while loop with a pipeline (e.g., find | while) runs in a subshell, so any changes made, like sourcing files, remain confined to that subshell and don't affect the parent shell. A for loop, on the other hand, executes directly in the current shell, so sourced files can modify the current shell's environment (e.g., variables, aliases).
+# for file in $(find "$SEARCH_DIR" -type f -name "*.sh"); do
+#   # echo "Sourcing $file"
+#   source "$file"
+# done
