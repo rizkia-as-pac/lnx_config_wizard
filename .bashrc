@@ -21,7 +21,7 @@ alias belajar="cd $HOME/Desktop/belajar"
 SHELL_CONFIG_FEATURES=$HOME/.shell_config_features.sh
 source $SHELL_CONFIG_FEATURES
 
-source $HOME/user-config.sh
+source $HOME/.user-config.sh
 
 PS1='[\u@\h \t \W]\$ '
 
