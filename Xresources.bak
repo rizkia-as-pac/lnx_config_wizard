@@ -1,10 +1,10 @@
 
-Xft.hinting: false        
-Xft.hintstyle: hintslight 
-Xft.antialias: false      
-Xft.rgba: none            
+Xft.hinting: 1
+Xft.hintstyle: hintslight
+Xft.antialias: 1
+Xft.rgba: rgb 
 
-xterm*faceName: DejaVu Sans Mono
+xterm*vt100.faceName: xft:DejaVu Sans Mono
 XTerm*faceSize: 10
 XTerm*background: grey11
 XTerm*foreground: white
