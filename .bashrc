@@ -12,6 +12,7 @@ alias ping="ping google.com"
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias c='clear'
+alias get-random-id='openssl rand -hex 4'
 
 alias createTriFolder="sudo mkdir -p $HOME/Desktop/work $HOME/Desktop/kuliah/SEM5 $HOME/Desktop/belajar"
 alias workdir="cd $HOME/Desktop/work"
