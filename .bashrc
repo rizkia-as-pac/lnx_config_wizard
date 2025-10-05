@@ -7,7 +7,7 @@ source ~/shell_config/functions/hot_reload/hot-reload-function.sh
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias tree="find .  | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
+# alias tree="find .  | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 alias ping="ping google.com"
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
@@ -18,6 +18,7 @@ alias createTriFolder="sudo mkdir -p $HOME/Desktop/work $HOME/Desktop/kuliah/SEM
 alias workdir="cd $HOME/Desktop/work"
 alias kuliah="cd $HOME/Desktop/kuliah/SEM5"
 alias belajar="cd $HOME/Desktop/belajar"
+alias misha="cd $HOME/Desktop/miscellaneous"
 
 SHELL_CONFIG_FEATURES=$HOME/.shell_config_features.sh
 source $SHELL_CONFIG_FEATURES

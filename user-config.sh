@@ -5,3 +5,6 @@ alias kucing="kitty --detach"
 alias koceng="xterm &"
 alias klipbord='xclip -selection clipboard'
 alias gitpushhelp="echo 'git push https://<username>:<token || password>@github.com/<username>/<repository>.git <branch>'"
+alias gitclonehelp="echo 'git clone https://<username>:<token || password>@github.com/<username>/<repository>.git <branch>'"
+
+alias ls='ls -al --color=auto'
